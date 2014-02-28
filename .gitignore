@@ -1,14 +1,8 @@
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
+# Bower components
+/public/libs
 
-pids
-logs
-results
+# Node modules
+/node_modules
 
-npm-debug.log
+# Editor files
+.idea

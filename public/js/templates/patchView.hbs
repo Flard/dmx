@@ -1,0 +1,15 @@
+{{#each universes}}
+    <h2>Universe {{{name}}}</h2>
+<ol class="patch-view">
+    {{#each addresses}}
+    {{#if .}}
+    <li class="{{{cellClass}}}">
+        <span>{{{address}}}.</span>
+        {{{text}}}
+    </li>
+    {{else}}
+        <li class="free"></li>
+    {{/if}}
+    {{/each}}
+</ol>
+{{/each}}

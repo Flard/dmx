@@ -1,0 +1,12 @@
+<ul>
+{{#conflicts}}
+    <li>
+        <strong>{{{model1.description}}} #{{{model1.number}}}</strong>
+        and
+        <strong>{{{model2.description}}} #{{{model2.number}}}</strong>
+{{#universe_addresses}}
+    <code>{{{.}}}</code>
+{{/universe_addresses}}
+    </li>
+{{/conflicts}}
+</ul>

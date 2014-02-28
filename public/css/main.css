@@ -1,0 +1,25 @@
+body {
+}
+
+ol.patch-view {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ol.patch-view li {
+    float: left;
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    font-size: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+ol.patch-view li.conflict {
+    background-color: #400;
+}
+
+ol.patch-view li.used {
+    background-color: #040;
+}

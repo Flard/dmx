@@ -1,0 +1,12 @@
+{
+    "name": "DMX",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "1.9",
+        "backbone": "1.1.1",
+        "underscore": null,
+        "requirejs": null,
+        "handlebars": null,
+        "require-handlebars-plugin": null
+    }
+}
