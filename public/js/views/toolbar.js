@@ -18,7 +18,7 @@ define(["backbone", "handlebars", "hbs!templates/toolbar", "dispatcher"], functi
         },
 
         afterSheetLoaded: function(fixtures) {
-            var key = fixtures.key;
+            var key = fixtures.fullKey;
 
             this.$el.find('.nav-channels').removeClass('disabled').find('a').attr('href', '#'+key);
             this.$el.find('.nav-conflicts').removeClass('disabled').find('a').attr('href', '#'+key+'/conflicts');

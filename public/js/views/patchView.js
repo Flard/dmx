@@ -44,7 +44,6 @@ define(["backbone", "handlebars", "hbs!templates/patchView", "dispatcher"], func
                     if (!!universes[universe]['addresses'][address-1]) {
                         universes[universe]['addresses'][address-1] = { address: address, text: 'Conflict', cellClass: 'conflict' };
                     } else {
-                        console.log(address);
                         universes[universe]['addresses'][address-1] = { address: address, text: description, cellClass: 'used' };
                     }
                 });

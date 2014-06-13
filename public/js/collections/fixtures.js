@@ -12,6 +12,13 @@ define(["backbone", "underscore", "models/fixture", "tabletop", 'backbone-tablet
                 return;
             }
 
+            var sheet = 'Sheet1';
+            var p = key.indexOf(':');
+            if (p > 0) {
+                sheet = key.substr(p+1);
+                key = key.substr(0, p);
+            }
+
             this.key = key;
 
             var storage = Tabletop.init( {
@@ -21,8 +28,9 @@ define(["backbone", "underscore", "models/fixture", "tabletop", 'backbone-tablet
 
             this.tabletop = {
                 instance: storage,
-                sheet: 'Sheet1'
+                sheet: sheet
             };
+            this.fullKey = key+':'+sheet;
 
             this.sync = Backbone.tabletopSync;
 
